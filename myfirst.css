@@ -1,0 +1,52 @@
+/* web page backround and font color */
+body{
+    background-color:gray;
+    color: rgb(173, 105, 41);
+
+}
+.header{
+    background: rgb(255, 208, 0);
+    padding: 2em;
+    text-align:center;
+}
+.nav{
+    background: rgb(102, 102, 6);
+    padding: 1em;
+    text-align: center;
+}
+.footer{
+    background: rgb(255, 208, 0);
+    padding: 1em;
+}
+/* Will lower a picture instead of scaling the web 
+page down */
+.flex-container {
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.flex-container > .content {
+    flex: 1 1 250px;
+    padding: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.flex-container > .sidebar {
+    flex: 1 1 250px;
+    background-color: tan;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex-container > .footer{
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: row;
+}
+/* Boarder for pictures */
+.flex-container > div {
+    background-color: rgb(56, 77, 6);
+    margin: 10 px;
+    padding: 10px;
+}
