@@ -1,52 +1,81 @@
 /* web page backround and font color */
 body{
-    background-color:gray;
-    color: rgb(173, 105, 41);
+    background-color:rgb(36, 38, 167);
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    margin: 0%;
 
 }
 .header{
-    background: rgb(255, 208, 0);
+    background-image:url("./images/Blue.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 2em;
-    text-align:center;
+    text-align:left;
 }
 .nav{
-    background: rgb(102, 102, 6);
+    background: rgb(67, 37, 236);
     padding: 1em;
-    text-align: center;
+    text-align: left;
+    border: solid rgb(29, 120, 255);
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(219, 219, 219);
+    padding: 5px;
+    border:2px solid rgb(93, 156, 252);
+    margin-left:4px
+}
+.container > .sidebar{
+    background: rgb(80, 80, 80);
+    margin: 0px;
+    padding:0px;
+    border:0px
 }
 .footer{
-    background: rgb(255, 208, 0);
-    padding: 1em;
+    background-image:url("./images/Blue.jpg");
+    background-position: center;
+}
+.button{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 255);
+    border:10px 10px 10px 10px;
+    border-radius: 4px;
+    padding: 15px 25px;
+    margin: 0px 0px 0px 40px;
+    cursor:pointer;
+
+}
+.button:hover{
+    background-color: blue;
+    color:white;
+}
+h1{
+    color:rgb(63, 63, 63);
+    text-shadow: 2px 2px 2px rgb(255, 255, 255)
+}
+h4{
+    color:rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255)
+}
+Img{
+    border-radius: 3px;
 }
 /* Will lower a picture instead of scaling the web 
 page down */
-.flex-container {
-    flex: 1 1 250px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.container {
+    margin:0%;
+    padding:0px;
 }
-.flex-container > .content {
-    flex: 1 1 250px;
-    padding: 10px;
-    flex-direction: column;
-    flex-wrap: wrap;
+.container > .content {
+    background-image:url("./images/blue2.jpg");
+    background-position:1px;
+    background-repeat: no-repeat;
+    margin:0px;
+    padding:0px;
+    border:0px;
+    color: rgb(255, 255, 255);
+    font-size: 15pt;
 }
-.flex-container > .sidebar {
-    flex: 1 1 250px;
-    background-color: tan;
-    padding: 10px;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.flex-container > .footer{
-    flex: 1 1 250px;
-    display: flex;
-    flex-direction: row;
-}
-/* Boarder for pictures */
-.flex-container > div {
-    background-color: rgb(56, 77, 6);
-    margin: 10 px;
-    padding: 10px;
-}
+
+
