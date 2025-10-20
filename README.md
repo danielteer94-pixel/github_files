@@ -1,3 +1,3 @@
-I created a portfolio website homepage and project file with a css file
+I created a portfolio website homepage and project files with a css file
 
-Index_html and projects.html
+portfolio_teer.html, plants.html props.html, and protfolio.css
