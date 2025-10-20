@@ -1,0 +1,137 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* navBar*/
+#navbar {
+  background-color: #1a1a1a;
+  padding: 10px 40px;
+}
+
+#navbar nav {
+  display: flex;
+  justify-content: space-between; /* pushes logo left, links right */
+  align-items: center; /* keeps everything vertically aligned */
+}
+
+/* Logo aligned left */
+.logo h1 {
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+}
+
+/* Navigation links aligned right */
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* spacing between each link */
+}
+
+/* Style individual links */
+.navLinks a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: #00bfff;
+}
+
+/* Catagory or projects from school */
+#categories {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.category-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  width: 200px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.category h2 {
+  padding: 10px;
+  color: #f0f0f0;
+  font-size: 18px;
+}
+
+.category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 191, 255, 0.3);
+}
+
+/* my plants flexbox    */
+/* Page title */
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    color: #f0f0f0;
+    margin: 20px 0;
+}
+
+/* Gallery Flexbox */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;        /* allow images to wrap on smaller screens */
+    justify-content: center; /* center the row of images */
+    gap: 20px;              /* spacing between images */
+    padding: 20px;
+}
+
+/* Each image sizing */
+.gallery img {
+    width: 250px;           /* set a fixed width */
+    height: auto;           /* maintain aspect ratio */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 191, 255, 0.3);
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #1a1a1a;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #ccc;
+}
