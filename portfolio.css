@@ -14,6 +14,20 @@ body {
   min-height: 100vh;
 }
 
+.intro {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  max-width: 800px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.intro h2 {
+  text-align: left;
+  margin: 10px auto;
+}
+
 /* navBar*/
 #navbar {
   background-color: #1a1a1a;
@@ -31,6 +45,16 @@ body {
   font-size: 24px;
   letter-spacing: 1px;
   color: #f0f0f0;
+}
+a {
+    text-decoration: none;
+    color: inherit; /* keeps the link the same color as surrounding text */
+}
+
+/* Optional hover effect for subtle feedback */
+a:hover {
+    color: #00bfff; /* same hover color as nav links */
+    transition: color 0.3s ease;
 }
 
 /* Navigation links aligned right */
@@ -101,7 +125,7 @@ body {
 .page-title {
     text-align: center;
     font-size: 32px;
-    color: #f0f0f0;
+    color: #7afc00;
     margin: 20px 0;
 }
 
@@ -126,6 +150,54 @@ body {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0, 191, 255, 0.3);
 }
+
+/* about me table */
+#skills {
+    width: 90%;
+    max-width: 1000px;
+    margin: 5% auto;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.5vw;
+    margin-bottom: 2%;
+    color: #b6b6b6;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    border-radius: 1.5%;
+    overflow: hidden;
+    box-shadow: 0 0.5% 1% rgba(0, 0, 0, 0.1);
+}
+
+/* Cells */
+th, td {
+    padding: 1.5% 2%;
+    border-bottom: 1px solid #b8b7b7;
+    text-align: left;
+}
+
+th {
+    background-color: #3d3c3c;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+td {
+    color: #555;
+    font-size: 1.2vw;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
 /* Footer */
 footer {
   text-align: center;
@@ -134,4 +206,20 @@ footer {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #ccc;
+}
+
+@media (max-width: 768px) {
+    #skills h2 {
+        font-size: 5vw;
+    }
+
+    th, td {
+        font-size: 3.5vw;
+        padding: 3% 2%;
+    }
+
+    table {
+        box-shadow: none;
+        border-radius: 0;
+    }
 }
